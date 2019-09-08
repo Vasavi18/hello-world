@@ -1,0 +1,295 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.exide.sfcrm</groupId>
+	<artifactId>SFCRM</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>SFCRM</name>
+	<description>SCFRM Spring Boot Application</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.3.RELEASE</version>
+		<relativePath />
+		<!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<springframework.version>4.3.5.RELEASE</springframework.version>
+		<springsecurity.version>4.2.3.RELEASE</springsecurity.version>
+		<springboot.version>4.2.3.RELEASE</springboot.version>
+		<apache-poi.version>3.14</apache-poi.version>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+		    <artifactId>javaee-api</artifactId>
+		    <version>7.0</version>
+   			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+  			<groupId>javax.mail</groupId>
+    		<artifactId>mail</artifactId>
+    		<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc</artifactId>
+			<version>4.1</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-test</artifactId> 
+			<scope>test</scope> </dependency> -->
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-ldap</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.json</groupId>
+			<artifactId>javax.json-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<!-- Spring security dependencies -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity4</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- LDAP Configuration -->
+		<dependency>
+			<groupId>org.springframework.ldap</groupId>
+			<artifactId>spring-ldap-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-ldap</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- Apache POI -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${apache-poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<!-- ... possibly other repository elements ... -->
+		<repository>
+			<id>spring-milestone</id>
+			<name>Spring Milestone Repository</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<finalName>SFCRM</finalName>
+		<pluginManagement> 
+		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>s1</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sonar</goal>
+						</goals>
+						<configuration>
+							<sonar.branch>SFCRM1</sonar.branch>
+						</configuration>
+					</execution>
+					<execution>
+						<id>s2</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sonar</goal>
+						</goals>
+						<configuration>
+							<sonar.branch>SFCRM2</sonar.branch>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+		        <artifactId>maven-resources-plugin</artifactId>
+		        <version>3.1.0</version>
+		        <executions>
+		          <execution>
+		            <id>copy-resources</id>
+		            <!-- here the phase you need -->
+		            <phase>generate-resources</phase>
+		            <goals>
+		              <goal>copy-resources</goal>
+		            </goals>
+		            <configuration>
+		              <encoding>UTF-8</encoding>
+		              <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
+		              <resources>          
+		                <resource>
+		                  <directory>dist/</directory>
+		                  <filtering>true</filtering>
+		                </resource>
+		              </resources>              
+		            </configuration>            
+		          </execution>
+		        </executions>
+		    </plugin>
+		    <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                  <execution>
+                    <goals>
+                      <goal>exec</goal>
+                    </goals>
+                    <phase>validate</phase>
+                  </execution>
+                </executions>
+                <configuration>
+                    <executable>npm</executable>
+                   <arguments>
+                   	<argument>run</argument>
+                   	<argument>build</argument>
+                   </arguments>
+                   <!--<workingDirectory>src\main\react</workingDirectory>-->
+                </configuration>
+            </plugin>
+		</plugins>
+		</pluginManagement>
+		 
+		<!--<resources>
+			<resource>
+				<directory>src/main/java</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>webapp/resources</directory>
+			</resource>
+		</resources>--> 
+		
+	</build>
+</project>
